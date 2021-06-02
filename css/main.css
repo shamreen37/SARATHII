@@ -233,7 +233,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 }
 
 .light-version-logo {
-    width: 10vw;
+    width: 12.7vw;
     height: 100%;
 }
 
@@ -2413,7 +2413,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 .price_heading {
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 2.9vw;
     font-weight: 500;
     margin-top: 0px;
 }
@@ -2425,6 +2425,10 @@ li.sub-menu--item.nav-item-has-children i {
     margin: 0px 10px;
     margin-bottom: 35px;
     color: #8b8d8f;
+}
+
+#services {
+    padding-bottom: 20px;
 }
 
 

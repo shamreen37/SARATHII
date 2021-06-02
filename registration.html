@@ -31,7 +31,7 @@
 
                     <div class="form-item box-item">
                         <label for="">About</label>
-                        <input type="text" name="name" placeholder="(Main idea and future plans of startup)" autocomplete="off" data-required>
+                        <input type="text" name="name" placeholder="(Main idea and future plans of Start-up)" autocomplete="off" data-required>
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     </div>
 
@@ -42,8 +42,8 @@
                     </div>
 
                     <div class="form-item box-item">
-                        <label for="">Worth of the Start-up</label>
-                        <input type="text" name="name" placeholder="(Cost price & Selling price)" autocomplete="off" data-required>
+                        <label for="">Net worth of the Start-up</label>
+                        <input type="text" name="name" placeholder="(Approx. Market value)" autocomplete="off" data-required>
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     </div>
 
@@ -60,11 +60,7 @@
                     </div>
 
                     <!--
-                    <div class="form-item box-item">
-                        <input type="email" name="email" placeholder="Email" data-email data-required>
-                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                        <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
-                    </div>
+                   
 
                 -->
 
@@ -107,30 +103,30 @@
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     </div>
 
-                    <div class="form-item box-item">
-                        <label for="">Any Other Relevant Details</label>
-                        <input type="text-area" name="name" placeholder="(Something we need to know about you)" autocomplete="off" data-required>
-                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-                    </div>
+
 
 
                     <!--
-                    <div class="form-item box-item">
+                     <div class="form-item box-item">
                         <div class="form-item-triple">
-                            <div class="radio-label">
-                                <label class="label">Type</label>
+
+                            <div class="form-item">
+                                <input id="Incubation" type="radio" name="gender2" value="sponsored" data-once>
+                                <label for="sponsored">Incubation Plan</label>
                             </div>
                             <div class="form-item">
-                                <input id="sponsored" type="radio" name="gender2" value="sponsored" data-once>
-                                <label for="sponsored">sponsored</label>
+                                <input id="client-services" type="radio" name="gender2" value="paid" data-once>
+                                <label for="paid">Client Services</label>
                             </div>
                             <div class="form-item">
-                                <input id="paid" type="radio" name="gender2" value="paid" data-once>
-                                <label for="paid">paid</label>
+                                <input id="other" type="radio" name="gender2" value="paid" data-once>
+                                <label for="paid">Other Services</label>
                             </div>
                         </div>
                         <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
                     </div>
+
+
                     <div class="form-item box-item">
                         <input type="text" name="address" placeholder="Address" data-required>
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
@@ -147,13 +143,59 @@
                             <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
                         </div>
                     </div>
-                    <div class="form-item box-item">
-                        <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
+                  
+                -->
+                    <div class="form-item box-item radio-item">
+                        <div class="radio-label">
+                            <label class="label">Services:</label>
+
+                        </div>
+                        <div class="form-item-triple">
+
+                            <div class="form-item radio">
+                                <input id="incubation" type="radio" name="service" value="friends" data-once>
+                                <label for="Friends">Incubation Plan</label>
+                            </div>
+                            <div class="form-item radio">
+                                <input id="client" type="radio" name="service" value="college" data-once>
+                                <label for="College">Client Services</label>
+                            </div>
+
+                            <div class="form-item radio">
+                                <input id="Other-service" type="radio" name="service" value="other" data-once>
+                                <label for="Other">Other Services</label>
+                            </div>
+                        </div>
+                        <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+                    </div>
+
+                    <div class="form-item box-details">
+                        <label for="">Contact Details: </label>
+                        <input type="text" name="name" placeholder="Name" autocomplete="off" data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                    </div>
+
+
+                    <div class="form-item box-details">
+                        <input type="text" name="phone" placeholder="Phone Number" data-required data-number data-count="10">
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                         <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
                         <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
                     </div>
-                -->
+                    <div class="form-item box-details " id="email">
+                        <input type="email" name="email" placeholder="Email address" data-email data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+                    </div>
+
+
+                    <div class="form-item box-item">
+                        <label for="">Any Other Relevant Details</label>
+                        <!--   <input type="text-area" name="name" placeholder="(Something we need to know about you)" autocomplete="off" data-required>  -->
+                        <textarea type="text" placeholder="(Something we need to know about you)" class="form_field textarea"></textarea>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                    </div>
+
 
 
 

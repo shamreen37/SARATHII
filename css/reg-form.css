@@ -144,7 +144,7 @@ small.errorOnce {
 }
 
 .register-button {
-  margin: 15px auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 
 textarea {
@@ -295,6 +295,44 @@ textarea {
   font-size: 14px;
 }
 
+/*===========================================*/
+textarea::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgba(226, 227, 232, 0.75);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(226, 227, 232, 0.75);
+  font-size: 14px;
+  opacity: 1;
+  font-family: sans-serif;
+}
+
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgba(226, 227, 232, 0.75);
+  font-size: 14px;
+  opacity: 1;
+  font-family: sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(226, 227, 232, 0.75);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(226, 227, 232, 0.75);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
 .submit {
   display: inline-block;
   font-size: 18px;
@@ -347,18 +385,21 @@ textarea {
   .box-item {
     margin-bottom: 25px;
   }
-  .register-button {
-    margin: 10px auto 0px auto;
-  }
   .box-details {
     margin-top: 10px;
   }
   #email {
-    margin-bottom: 9px;
+    margin-bottom: 20px;
   }
   .box-item {
-    margin-bottom: 6px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="number"],
+  .form-item input[type="email"],
+  .form-item input[type="text-area"] {
+    padding: 9px 0 3px 0px;
   }
 }
 /*# sourceMappingURL=reg-form.css.map */

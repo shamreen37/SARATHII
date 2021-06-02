@@ -71,19 +71,19 @@
                         </div>
                         <div class="form-item-triple">
 
-                            <div class="form-item radio">
-                                <input id="Friends" type="radio" name="reference" value="friends" data-once>
+                            <div class="form-item  ">
+                                <input id="Friends" class="first-radio" type="radio" name="reference" value="friends" data-once>
                                 <label for="Friends">Friends</label>
                             </div>
-                            <div class="form-item radio">
+                            <div class="form-item">
                                 <input id="College" type="radio" name="reference" value="college" data-once>
                                 <label for="College">College</label>
                             </div>
-                            <div class="form-item radio">
+                            <div class="form-item ">
                                 <input id="Advertisements" type="radio" name="reference" value="advertisements" data-once>
                                 <label for="Advertisements">Advertisements</label>
                             </div>
-                            <div class="form-item radio">
+                            <div class="form-item ">
                                 <input id="Other" type="radio" name="reference" value="other" data-once>
                                 <label for="Other">Other</label>
                             </div>
@@ -152,8 +152,8 @@
                         </div>
                         <div class="form-item-triple">
 
-                            <div class="form-item radio">
-                                <input id="incubation" type="radio" name="service" value="friends" data-once>
+                            <div class="form-item radio ">
+                                <input id="incubation" class="first-radio" type="radio" name="service" value="friends" data-once>
                                 <label for="Friends">Incubation Plan</label>
                             </div>
                             <div class="form-item radio">
@@ -169,9 +169,10 @@
                         <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
                     </div>
 
+
                     <div class="form-item box-details">
-                        <label for="">Contact Details: </label>
-                        <input type="text" name="name" placeholder="Name" autocomplete="off" data-required>
+                        <label for="" id="contact-label">Contact Details: </label>
+                        <input type="text" class="name-input" name="name" placeholder="Name" autocomplete="off" data-required>
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     </div>
 
@@ -191,7 +192,6 @@
 
                     <div class="form-item box-item">
                         <label for="">Any Other Relevant Details</label>
-                        <!--   <input type="text-area" name="name" placeholder="(Something we need to know about you)" autocomplete="off" data-required>  -->
                         <textarea type="text" placeholder="(Something we need to know about you)" class="form_field textarea"></textarea>
                         <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
                     </div>

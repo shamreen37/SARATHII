@@ -149,13 +149,22 @@
             }
         }
         
+        .box-details {
+            .name-input {
+                margin-top: 8px;
+            }
+            label {
+                margin-top: 10px;
+            }
+        }
+        
         .box-item {
-            margin-bottom: 6px;
-            margin-top: 15px;
+            margin-bottom: 2px;
+            margin-top: 25px;
         }
         
         .box-details {
-            margin-top: 15px;
+            margin-top: 17px;
         }
         
         #email {
@@ -185,6 +194,10 @@
             }
         }
         
+        .first-radio {
+            margin-left: 0px !important;
+        }
+        
         .form-item-triple {
             display: flex;
             flex-wrap: wrap;
@@ -198,7 +211,7 @@
                 input[type="radio"] {
                     display: inline-block;
                     vertical-align: middle;
-                    margin: 4px 0px 0px 6px;
+                    margin: 2px 0px 0px 7px;
                 }
             }
         }
@@ -309,13 +322,15 @@
                 transform: rotate(360deg);
             }
         }
+        /*======================================================================*/
+        /*MEDIA QUERIES*/
         
         @media screen and (max-width:580px) {
             .box-item {
                 margin-bottom: 25px;
             }
             .box-details {
-                margin-top: 10px;
+                margin-top: 15px;
             }
             #email {
                 margin-bottom: 20px;
@@ -329,7 +344,12 @@
                 input[type="number"],
                 input[type="email"],
                 input[type="text-area"] {
-                    padding: 9px 0 3px 0px;
+                    padding: 12px 0 3px 0px;
+                }
+            }
+            .box-details {
+                label {
+                    margin-top: 0px;
                 }
             }
         }
